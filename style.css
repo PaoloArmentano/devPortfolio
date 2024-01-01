@@ -293,6 +293,7 @@ section {
 .btn-color-2 {
     border: var(--blue) 0.1rem solid;
     color: var(--blue);
+    background-color: var(--white);
 }
 
 .btn-color-1 {
