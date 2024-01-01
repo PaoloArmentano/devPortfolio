@@ -20,6 +20,10 @@ p {
     color: rgb(85, 85, 85);
 }
 
+button {
+    font-family: 'Poppins';
+}
+
 /* transition */
 
 a, .btn {
