@@ -33,12 +33,13 @@ p {
 
 button {
     font-family: 'Poppins';
+    cursor: pointer;
 }
 
 /* transition */
 
 a, .btn {
-    transition: all 300ms ease;
+    transition: all 0.3s ease;
 }
 
 /* desktop nav */
@@ -62,14 +63,27 @@ nav {
 a {
     color: var(--darkGrey);
     text-decoration: none;
-    text-decoration-color: var(--white);
+    position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.6px;
+    background-color: var(--lightGrey);
+    transition: width 0.3s ease;
+}
+
+a:hover::before {
+    width: 100%;
 }
 
 a:hover {
     color: var(--grey);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: var(--lightGrey);
+    text-decoration: none; 
 }
 
 .logo {
@@ -281,21 +295,13 @@ section {
     color: var(--blue);
 }
 
-.btn-color-1:hover, .btn-color-2:hover {
-    cursor: pointer;
-    border: var(--darkBlue);
-}
-
-.btn-color-1, .btn-color-2:hover {
-    background: linear-gradient(to right, var(--darkBlue), var(--blue));    color: var(--white);
-}
-
 .btn-color-1:hover {
     background: var(--darkBlue);
 }
 
-.btn-container {
-    gap: 1rem;
+.btn-color-1, .btn-color-2:hover {
+    color: var(--white);
+    background: linear-gradient(to right, var(--darkBlue), var(--blue));    
 }
 
 /* about section */
