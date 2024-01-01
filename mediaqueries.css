@@ -69,7 +69,8 @@
     }
     
     footer {
-        padding: 0.2rem 1rem;
+        padding: 1rem 2rem;
+        font-size: small;
     }
 
     .about-containers, .contact-info-upper-container, .btn-container {
