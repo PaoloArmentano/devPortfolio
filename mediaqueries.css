@@ -67,6 +67,10 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
+    
+    footer {
+        padding: 0.2rem 1rem;
+    }
 
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
