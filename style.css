@@ -252,6 +252,7 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    filter: grayscale(100%);
 }
 
 /* buttons */
