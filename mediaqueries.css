@@ -47,6 +47,10 @@
     .about-containers {
         margin-top: 0;
     }
+
+    .about-pic {
+        margin-top: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -70,10 +74,6 @@
 
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
-    }
-
-    .about-pic {
-        margin-top: 1.3rem;
     }
 
     .contact-info-container {
