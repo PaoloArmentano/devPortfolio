@@ -15,6 +15,9 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+.wrapper {
     background-color: var(--white);
     color: var(--darkGrey);
     background-color: var(--white);
