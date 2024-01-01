@@ -5,7 +5,7 @@
 :root {
     --darkBlue: #000ea9;
     --blue: #0055ff;
-    --lightBlue: #007fef;
+    --lightBlue: #3497ec;
     --darkGrey: #161616;
     --grey: #4e4e4e;
     --lightGrey: #989898;
@@ -136,7 +136,7 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
-    box-shadow: -1px 6px 16px 4px rgba(0,0,0,0.27);
+    box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.27);
     margin-top: 1rem;
 }
 
@@ -227,6 +227,23 @@ section {
     margin-top: 1rem;
     gap: 1rem;
 }
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 15px var(--lightGrey);
+    }
+    50% {
+      box-shadow: 0 0 30px var(--lightGrey);
+    }
+    100% {
+      box-shadow: 0 0 15px var(--lightGrey);
+    }
+  }
+  
+  .headshot {
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+  }
 
 /* icons */
 
