@@ -2,10 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root {
+    --darkBlue: #000ea9;
+    --blue: #0055ff;
+    --lightBlue: #007fef;
+    --darkGrey: #161616;
+    --grey: #4e4e4e;
+    --lightGrey: #989898;
+    --white: #ffffff;
+}
 
 * {
     margin: 0;
     padding: 0;
+    background-color: var(--white);
+    color: var(--darkGrey);
 }
 
 body {
@@ -17,7 +28,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--grey);
 }
 
 button {
@@ -49,16 +60,16 @@ nav {
 }
 
 a {
-    color: black;
+    color: var(--darkGrey);
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: var(--white);
 }
 
 a:hover {
-    color: grey;
+    color: var(--grey);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: var(--lightGrey);
 }
 
 .logo {
@@ -92,7 +103,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: var(--darkGrey);
     transition: all 0.3 ease-in-out;
 }
 
@@ -100,7 +111,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: var(--white);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -114,7 +125,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: var(--darkGrey);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -206,6 +217,10 @@ section {
     text-align: center;
 }
 
+.name {
+    color: var(--blue);
+}
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -237,28 +252,22 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: var(--blue) 0.1rem solid;
+    color: var(--blue);
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
     cursor: pointer;
+    border: var(--darkBlue);
 }
 
 .btn-color-1, .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+    background: var(--blue);
+    color: var(--white);
 }
 
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    background: var(--darkBlue);
 }
 
 .btn-container {
@@ -299,10 +308,10 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: var(--white);
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: var(--grey) 0.1rem solid;
+    border-color: var(--lightGrey);
     text-align: center;
 }
 
@@ -324,7 +333,7 @@ section {
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: var(--grey);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -363,8 +372,8 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: var(--lightGrey);
+    background: var(--white);
 }
 
 .project-img {
@@ -375,12 +384,12 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: var(--darkGrey);
 }
 
 .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+    color: var(--darkGrey);
+    border-color: var(--lightGrey);
 }
 
 /* contact */
@@ -396,9 +405,9 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border: var(--grey) 0.1rem solid;
+    border-color: var(--lightGrey);
+    background: var(--white);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -426,10 +435,17 @@ article .icon {
 /* footer section */
 
 footer {
-    height: 26vh;
-    margin: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 11vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--darkGrey);
+    box-shadow: -1px -3px 20px 0px rgba(0,0,0,0.52);
 }
 
-footer p {
-    text-align: center;
+.footer-p {
+    background-color: var(--darkGrey);
+    color: var(--white);
 }
