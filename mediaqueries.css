@@ -7,7 +7,7 @@
     }
 
     .about-containers {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
     #desktop-nav {
         display: none;
