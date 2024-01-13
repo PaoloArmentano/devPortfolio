@@ -410,12 +410,20 @@ article .icon {
 .color-container {
     border-color: var(--lightGrey);
     background: var(--white);
+    box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.27);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.color-container:hover {
+    transform: scale(1.02);
 }
 
 .project-img {
     border-radius: 1rem;
-    width: 90%;
+    width: 100%;
     height: 90%;
+    border: 2px solid var(--lightGrey);
 }
 
 .project-title {
@@ -426,6 +434,10 @@ article .icon {
 .project-btn {
     color: var(--darkGrey);
     border-color: var(--lightGrey);
+}
+
+.project-btn:hover {
+    border-color: var(--blue);
 }
 
 /* contact */
