@@ -16,6 +16,10 @@
         display: flex;
     }
 
+    a::before {
+        background-color: white;
+    }
+
     #experience, .experience-details-container {
         margin-top: 2rem;
     }
@@ -48,6 +52,10 @@
 
     .about-pic {
         margin-top: 1.3rem;
+    }
+
+    #projects {
+        margin-top: 100px;
     }
 }
 
