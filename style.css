@@ -93,6 +93,7 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    text-shadow: -4px 4px 4px rgba(0,0,0,0.19);
 }
 
 .logo:hover {
@@ -260,7 +261,7 @@ section {
       box-shadow: 0 0 30px var(--grey);
     }
   }
-  
+
   .headshot {
     border-radius: 50%;
     animation: pulse 3s infinite;
@@ -301,13 +302,13 @@ section {
     color: var(--blue);
 }
 
-.btn-color-1:hover {
-    background: var(--darkBlue);
-}
-
 .btn-color-1, .btn-color-2:hover {
     color: var(--white);
-    background: linear-gradient(to right, var(--darkBlue), var(--blue));    
+    background: var(--blue);    
+}
+
+.btn-color-1:hover {
+    background: var(--darkBlue);
 }
 
 /* about section */
@@ -334,6 +335,7 @@ section {
 .about-pic {
     border-radius: 1rem;
     box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.50);
+    border: 2px solid var(--lightBlue);
 }
 
 .arrow {
@@ -425,10 +427,10 @@ article .icon {
 
 .color-container:hover {
     transform: scale(1.02);
+    box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.35);
 }
 
 .project-img {
-    border-radius: 1rem;
     width: 100%;
     height: 90%;
     border: 2px solid var(--lightGrey);
