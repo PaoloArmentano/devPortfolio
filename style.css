@@ -333,6 +333,7 @@ section {
 
 .about-pic {
     border-radius: 1rem;
+    box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.50);
 }
 
 .arrow {
@@ -349,6 +350,13 @@ section {
     border: var(--grey) 0.1rem solid;
     border-color: var(--lightGrey);
     text-align: center;
+    box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.27);
+    transition: transform 0.2s ease-in-out;
+    cursor: default;
+}
+
+.details-container:hover {
+    transform: scale(1.02);
 }
 
 .section-container {
@@ -458,6 +466,12 @@ article .icon {
     background: var(--white);
     margin: 2rem auto;
     padding: 0.5rem;
+    box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.27);
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-info-upper-container:hover {
+    transform: scale(1.01);
 }
 
 .contact-info-container {
