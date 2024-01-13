@@ -94,10 +94,12 @@ a:hover {
 .logo {
     font-size: 2rem;
     text-shadow: -4px 4px 4px rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
 }
 
 .logo:hover {
-    cursor: pointer;
+    cursor: default;
+    transform: scale(1.03);
 }
 
 /* hamburger menu */
@@ -473,7 +475,7 @@ article .icon {
 }
 
 .contact-info-upper-container:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 .contact-info-container {
