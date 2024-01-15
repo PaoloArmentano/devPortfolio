@@ -269,14 +269,13 @@ section {
   .headshot {
     border-radius: 50%;
     animation: pulse 3s infinite;
-    outline: 1px solid rgb(203, 201, 201);
     transition: outline-offset 0.2s ease; 
 
   }
 
   .headshot:hover {
     cursor: pointer;
-    outline: 6px double var(--blue);
+    outline: 2px solid var(--blue);
     outline-offset: 12px; 
   }
 
