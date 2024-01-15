@@ -269,6 +269,14 @@ section {
   .headshot {
     border-radius: 50%;
     animation: pulse 3s infinite;
+    transition: outline 0.2s ease;
+    outline: 2px transparent;
+  }
+
+  .headshot:hover {
+    cursor: pointer;
+    outline: 2px solid var(--blue);
+    outline-offset: 17px;
   }
 
 /* icons */
