@@ -90,6 +90,10 @@
         font-size: 1rem;
     }
 
+    .contact-info-container p {
+        padding: 0 0.4rem;
+    }
+
     .experience-sub-title {
         font-size: 1.25rem;
     }
@@ -120,6 +124,10 @@
 
     .text-container {
         text-align: justify;
+    }
+    
+    #about {
+        padding: 10px;
     }
 
 }
