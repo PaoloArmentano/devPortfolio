@@ -269,8 +269,7 @@ section {
   .headshot {
     border-radius: 50%;
     animation: pulse 3s infinite;
-    transition: outline-offset 0.2s ease; 
-
+    transition: all 0.2s ease; 
   }
 
   .headshot:hover {
@@ -278,9 +277,6 @@ section {
     outline: 2px solid var(--blue);
     outline-offset: 12px; 
   }
-
-
-  
 
 /* icons */
 
@@ -357,7 +353,7 @@ section {
 .about-pic:hover {
     cursor: pointer;
     outline-offset: 12px;
-    outline: 6px double var(--blue);
+    outline: 2px solid var(--blue);
 }
 
 .arrow {
