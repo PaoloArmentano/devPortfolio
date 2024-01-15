@@ -350,7 +350,13 @@ section {
 .about-pic {
     border-radius: 1rem;
     box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.50);
-    border: 2px solid var(--lightBlue);
+    outline: 2px solid var(--blue);
+    transition: all 0.3s ease;
+}
+
+.about-pic:hover {
+    cursor: pointer;
+    outline-offset: 17px;
 }
 
 .arrow {
@@ -378,6 +384,7 @@ section {
 
 .details-container:hover {
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 .section-container {
