@@ -270,13 +270,13 @@ section {
     border-radius: 50%;
     animation: pulse 3s infinite;
     outline: 1px solid rgb(203, 201, 201);
-    transition: outline-offset 0.3s ease; 
+    transition: outline-offset 0.2s ease; 
 
   }
 
   .headshot:hover {
     cursor: pointer;
-    outline: 2px solid var(--blue);
+    outline: 6px double var(--blue);
     outline-offset: 12px; 
   }
 
@@ -352,13 +352,13 @@ section {
     border-radius: 1rem;
     box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.50);
     outline: 2px solid var(--blue);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .about-pic:hover {
     cursor: pointer;
     outline-offset: 12px;
-    outline: 2px solid var(--lightBlue);
+    outline: 6px double var(--blue);
 }
 
 .arrow {
