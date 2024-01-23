@@ -269,6 +269,13 @@ section {
   .headshot {
     border-radius: 50%;
     animation: pulse 3s infinite;
+    transition: all 0.2s ease; 
+  }
+
+  .headshot:hover {
+    cursor: pointer;
+    outline: 2px solid var(--blue);
+    outline-offset: 12px; 
   }
 
 /* icons */
@@ -339,7 +346,14 @@ section {
 .about-pic {
     border-radius: 1rem;
     box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.50);
-    border: 2px solid var(--lightBlue);
+    outline: 2px solid var(--blue);
+    transition: all 0.2s ease;
+}
+
+.about-pic:hover {
+    cursor: pointer;
+    outline-offset: 12px;
+    outline: 2px solid var(--blue);
 }
 
 .arrow {
@@ -367,6 +381,7 @@ section {
 
 .details-container:hover {
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 .section-container {
