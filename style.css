@@ -347,6 +347,7 @@ section {
     box-shadow: -1px 6px 16px 4px rgba(0, 0, 0, 0.50);
     outline: 2px solid var(--blue);
     transition: all 0.2s ease;
+    border-radius: 3%;
 }
 
 .about-pic:hover {
